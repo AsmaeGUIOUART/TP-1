@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPBootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+            .card-body > p {
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .card-media-with{
+              width: 18rem;
+            }
+            @media (min-width: 768px ) {
+              .card-media-with{
+                width: 100%;
+              }
+            }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contact</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.couverturefb.com/upload/2016/02/24/20160224121133-bf883daf.jpg"
+                    class="d-block w-100" alt="image1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.couverturefb.com/upload/2016/02/24/20160224121049-78976cc4.jpg"
+                    class="d-block w-100" alt="image1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.couverturefb.com/galleries/PAYSAGES_ET_NATURE/PLAGES_ET_BORDS_DE_MER/RIVIERES/Riviere_-_Couverture_HD__21_.jpg"
+                    class="d-block w-100" alt="image1">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section>
+    <main class="container">
+        <div class="row  row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.couverturefb.com/upload/2016/02/24/20160224121133-bf883daf.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda, provident alias in tempora laudantium. Animi quidem asperiores sunt vero voluptatem dolor quo, ullam officia similique qui eligendi quos maxime!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.couverturefb.com/upload/2016/02/24/20160224121049-78976cc4.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veritatis eius odit quas consequatur placeat sed. Sit eius error commodi deleniti aliquid quaerat rerum, possimus ad doloremque corporis placeat vel!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.couverturefb.com/galleries/PAYSAGES_ET_NATURE/PLAGES_ET_BORDS_DE_MER/RIVIERES/Riviere_-_Couverture_HD__21_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt, sunt cupiditate atque, dolores numquam consequuntur aut soluta vel suscipit unde necessitatibus, vitae excepturi facilis hic maiores nemo earum placeat.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+    </div>
+
+<br></br>
+         <h1 class="fs-4 text-capitalize text-decoration-underline">Notre équipe:</h1>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 align-items-center">
+                        <img src="https://media.istockphoto.com/id/508256950/vector/business-woman-icon.jpg?s=170667a&w=0&k=20&c=G6gxmlpNCPV1iDGh5UOTidc0khTpr6x_mBxrHCwr3EE="
+                            class="card-img-top rounded-circle w-50 " alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Member 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo ad voluptatibus incidunt vel accusantium, maxime soluta impedit aut, saepe minima quos autem veritatis corporis ea, est aspernatur! Facere, aliquid?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 align-items-center">
+                        <img src="https://media.istockphoto.com/id/508256950/vector/business-woman-icon.jpg?s=170667a&w=0&k=20&c=G6gxmlpNCPV1iDGh5UOTidc0khTpr6x_mBxrHCwr3EE="
+                            class="card-img-top rounded-circle w-50 " alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Member 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsam aspernatur voluptatum commodi, in architecto aliquam doloribus totam saepe. Maiores suscipit non tenetur reprehenderit deleniti, illum ipsam sit unde aliquid.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 align-items-center">
+                        <img src="https://media.istockphoto.com/id/508256950/vector/business-woman-icon.jpg?s=170667a&w=0&k=20&c=G6gxmlpNCPV1iDGh5UOTidc0khTpr6x_mBxrHCwr3EE="
+                            class="card-img-top rounded-circle w-50 " alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Member 3</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores accusantium ut vel ipsum possimus rerum doloribus quia repellat nobis, ea veniam molestiae rem nam amet iusto qui laborum nihil a?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+<br></br>
+
+<h1 class="fs-4 text-capitalize ">Contact Us:</h1><br></br>
+
+  <div class="container">
+    <div class="mb-3">
+    <label for="Email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="Email" placeholder="Email">
+  </div>
+  <div class="mb-3">
+    <label for="Address" class="form-label">Address</label>
+    <input type="text" class="form-control" id="Address" placeholder="Address"></div>
+   <center>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=enset%20media&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to embed google maps in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style><br></br>
+    </center>
+  </div>
+    </main>
+</section>
+
+
+</body>
